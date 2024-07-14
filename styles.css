@@ -1,0 +1,193 @@
+/* Reset default margin and padding */
+* {
+  margin: 0px 10px 0px 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Light blue */
+  animation: background-gradient 15s ease infinite alternate;
+}
+
+@keyframes background-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #f0f8ff;; /* Dark gray */
+  color: #070505;
+  padding: 5px 0px 0px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: nav-slide-in 0.5s ease forwards;
+}
+
+@keyframes nav-slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #121616;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f79be8; /* Light blue */
+}
+#about:hover{
+  /* border-radius: 8px; Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  /* border: 2px solid #ccc; Border style */
+}
+#about h2{
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+#image-sec {
+  border-radius: 20px; /* Rounded corners */
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); Box shadow for depth */
+  border: 2px solid #ccc; /* Border style */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+}
+#image-sec:hover{
+  transform: scale(1.1);
+  /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1) */
+}
+#image-sec .content {
+  text-align: center; /* Center text */
+}
+
+#image-sec img {
+  max-width: 50%; /* Image takes up to 70% of the container */
+  display: block; /* Ensure image is centered within its container */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+#image-sec h1, #image-sec p {
+  margin: 5px 0; /* Add some margin between elements */
+}
+
+#Skills:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@keyframes text-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header p {
+  font-size: 18px;
+  color: #777;
+  animation: text-fade-in 1.5s ease forwards; 
+}
+
+/* Sections styles */
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Dark gray */
+  animation: text-zoom-in 0.5s ease forwards;
+}
+
+@keyframes text-zoom-in {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+#about p {
+  text-align: center;
+  color: #f0f8ff; /* Light blue */
+  animation: text-highlight 1s ease infinite alternate;
+}
+
+@keyframes text-highlight {
+  from {
+    color: #f0f8ff; /* Light blue */
+  }
+  to {
+    color: #4e4e4e; /* Dark gray */
+  }
+}
+.text{
+  animation: text-highlight 1s infinite alternate;;
+}
+.text:hover{
+  animation-play-state: paused ;
+}
+
+
+/* Portfolio projects styles */
+
+.re-co{
+  display: flex;
+}
+#resume{
+  flex:content;
+  background-color: #bef2ea;
+}
+#contact{
+  flex:1;
+  border-color: #070505 ;
+  border-radius: 10px;
+  background-color: #bef2ea;
+  }
+
+  .page-break {
+    page-break-after: always; /* Insert page break after this element */
+    /* Additional styling for the page break */
+    border-top: 2px dashed #000; /* Example border */
+    margin-top: 20px; /* Example margin */
+    padding-top: 20px; /* Example padding */
+  }
+  
+footer{
+  text-align: center;
+}
